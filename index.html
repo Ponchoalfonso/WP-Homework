@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Tutorial CSS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="main.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Tutorial de CSS</h1>
+    <p>Por: Alfonso Valencia Sandoval <br>Grupo: 4K</p>
+  </header>
+  <section class="medidas">
+    <h2>Medidas</h2>
+    <p>
+      CSS cuenta con diversas medidas que nos ayudan asignar valor de longitod a algunas
+      propiedades de elementos, tales como <span class="cursiva">width, height, margin, padding, font-size, etc.</span>.
+      Las longitudes generalmente se expresan con un número seguido de su tipo de medida, 
+      por ejemplo <span class="cursiva">16px</span>.
+    </p>
+    <div class="in-section">
+      <h3>Relativas:</h3>
+      <div class="item">
+        <p>
+          <strong>Medida: <span class="cursiva">Pixeles (px)</span></strong><br>
+          Un pixel equivale a 1/96 de pulgada, aunque puede variar a través de dispositivos, ya que en resoluciones
+          pequeñas 1px equivale a un pixel físico del dispositivo y en resoluciones mas grandes 1px equivale a múltiples
+          pixeles físicos.
+        </p>
+        <p>Ejemplo: Div de 100px X 100px</p>
+        <div class="ejemplo-1">
+        </div>
+      </div>
+      <div class="item">
+        <p>
+          <strong>Medida: <span class="cursiva">(em)</span></strong><br>
+          Esta medida es relativa al tamaño de fuente, 2em equivalen a dos veces el tamaño de la fuente actual.
+        </p>
+        <p>Ejemplo: Div de 5em X 5em</p>
+        <div class="ejemplo-2">
+        </div>
+      </div>
+      <div class="item">
+        <p>
+          <strong>Medida: <span class="cursiva">(ex)</span></strong><br>
+          Esta medida es relativa al alto de la X de la fuente actual.
+        </p>
+        <p>Ejemplo: Div de 5ex X 5ex</p>
+        <div class="ejemplo-3">
+        </div>
+      </div>
+      <div class="item">
+        <p>
+          <strong>Medida: <span class="cursiva">(rem)</span></strong><br>
+          Esta medida es relativa al tamañod e fuene del elemento raiz del html.
+        </p>
+        <p>Ejemplo: Div de 5rem X 5rem</p>
+        <div class="ejemplo-4">
+        </div>
+      </div>
+    </div>
+    <div class="in-section">
+      <h3>Absolutas:</h3>
+      <div class="item">
+        <p>
+          <strong>Medida: <span class="cursiva">Pulgada (in)</span></strong><br>
+          Medida absoluta en pulgadas. Pulgada = 2.54cm = 96px.
+        </p>
+        <p>Ejemplo: Div de 2in X 5in</p>
+        <div class="ejemplo-5">
+        </div>
+      </div>
+      <div class="item">
+        <p>
+          <strong>Medida: <span class="cursiva">Centímetro (cm)</span></strong><br>
+          Medida absoluta en centímetros.
+        </p>
+        <p>Ejemplo: Div de 2cm X 5cm</p>
+        <div class="ejemplo-6">
+        </div>
+      </div>
+      <div class="item">
+        <p>
+          <strong>Medida: <span class="cursiva">Milímetro (mm)</span></strong><br>
+          Medida absoluta en milímetros.
+        </p>
+        <p>Ejemplo: Div de 60mm X 60mm</p>
+        <div class="ejemplo-7">
+        </div>
+      </div>
+      <div class="item">
+        <p>
+          <strong>Medida: <span class="cursiva">Punto (pt)</span></strong><br>
+          Un putno equivale a 1/72 de pulgada.
+        </p>
+        <p>Ejemplo: Div de 5pt X 5pt</p>
+        <div class="ejemplo-8">
+        </div>
+      </div>
+      <div class="item">
+        <p>
+          <strong>Medida: <span class="cursiva">Pica (pc)</span></strong><br>
+          Una pc equivale a 12pt.
+        </p>
+        <p>Ejemplo: Div de 5pc X 5pc</p>
+        <div class="ejemplo-9">
+        </div>
+      </div>
+    </div>
+    <div class="in-section">
+      <h3>Porcentuales:</h3>
+      <div class="item">
+        <p>
+          <strong>Medida: <span class="cursiva">Porciento (%)</span></strong><br>
+          Relativo en porcentaje al elemento padre.
+        </p>
+        <p>Ejemplo: Div de 50% X 50%</p>
+        <div class="ejemplo-9">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <h2>Colores</h2>
+    <p>
+      En CSS podemos asiganr colores a elementos a trabes de ciertas propiedades. Para dar valores de
+      color tenemos las siguientes etiquetas.
+    </p>
+    <div class="in-section">
+      <h3>Etiquetas para asignar valores de colores</h3>
+      <div class="item">
+        <p>
+          <strong>Etiqueta: <span class="cursiva">rgb</span></strong><br>
+          Esta etiqueta nos permite ingresar valores a los canales Red Green y Blue para crear colores. <br>
+          La entrada de datos puede ser porcentual, decimal o hexadecimal.
+        </p>
+        <p>Ejemplo <span class="ejemplo-color-1">rgb(194, 124, 124)</span></p>
+        <p>Ejemplo <span class="ejemplo-color-2">#5c7aa7</span></p>
+        <p>Ejemplo <span class="ejemplo-color-3">rgb(20%, 50%, 18%)</span></p>
+        <p><br>Además contamos con una variante que es rgba</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
