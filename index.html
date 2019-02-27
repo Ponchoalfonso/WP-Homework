@@ -14,7 +14,7 @@
     <h1>Tutorial de CSS</h1>
     <p>Por: Alfonso Valencia Sandoval <br>Grupo: 4K</p>
   </header>
-  <section class="medidas">
+  <section>
     <h2>Medidas</h2>
     <p>
       CSS cuenta con diversas medidas que nos ayudan asignar valor de longitod a algunas
@@ -138,10 +138,86 @@
           Esta etiqueta nos permite ingresar valores a los canales Red Green y Blue para crear colores. <br>
           La entrada de datos puede ser porcentual, decimal o hexadecimal.
         </p>
-        <p>Ejemplo <span class="ejemplo-color-1">rgb(194, 124, 124)</span></p>
-        <p>Ejemplo <span class="ejemplo-color-2">#5c7aa7</span></p>
-        <p>Ejemplo <span class="ejemplo-color-3">rgb(20%, 50%, 18%)</span></p>
-        <p><br>Además contamos con una variante que es rgba</p>
+        <p>Ejemplo: <span class="ejemplo-color-1">rgb(194, 124, 124)</span></p>
+        <p>Ejemplo: <span class="ejemplo-color-2">#5c7aa7</span></p>
+        <p>Ejemplo: <span class="ejemplo-color-3">rgb(20%, 50%, 18%)</span></p>
+      </div>
+      <div class="item">
+        <p>
+          <strong>Etiqueta: <span class="cursiva">rgba</span></strong><br>
+          rgb cuenta con una variante que es rgba con la que podemos modificar el canal Alpha del color.
+        </p>
+        <p>Ejemplo: un div con un valor de Alpha de 0.5 para crear transparencia</p>
+        <div class="ejemplos">
+          <div class="ejemplo-color-4">
+            <div class="sample-color">
+              <p>rgba(76, 28, 153, 0.5)</p>
+            </div>
+          </div>
+          <div class="ejemplo-color-4 original">
+            <p>Sin color por encima</p>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <p>
+          <strong>Etiqueta: <span class="cursiva">hsl</span></strong><br>
+          Esta etiquita requiere de 3 valores Hue, Saturation y Lightness (matíz, saturación Y luminusidad).
+          Hue cuenta con un valor entre 0 y 360, saturación y luminusidad en porcentaje.
+        </p>
+        <p>Ejemplo: <span class="ejemplo-color-5">hsl(91, 57%, 40%)</span></p>
+      </div>
+      <div class="item">
+        <p>
+          <strong>Etiqueta: <span class="cursiva">hsla</span></strong><br>
+          hsl cuenta con una variante que es hsla con la que podemos modificar el canal Alpha del color.
+        </p>
+        <p>Ejemplo: un div con un valor de Alpha de 0.5 para crear transparencia</p>
+        <div class="ejemplos">
+          <div class="ejemplo-color-4">
+            <div class="sample-color-2">
+              <p>hsla(133, 69%, 35%, 0.5)</p>
+            </div>
+          </div>
+          <div class="ejemplo-color-4 original">
+            <p>Sin color por encima</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <h2>Espaciados</h2>
+    <p>
+      Para dar estilo o espacio a los elementos tenemos dos propiedades muy comunes margin y padding a
+      las cuales podemos darles valores de medidas como las que se presentan anteriormente.
+    </p>
+    <div class="in-section">
+      <h3>Margin y Padding</h3>
+      <div class="item">
+        <p>
+          <strong>Propiedad: <span class="cursiva">margin</span></strong><br>
+          Margin es una propiedad que crea un margen entre los bordes del elemento padre y el elemento, también
+          crea un margen entre los elementos adyacentes.
+        </p>
+        <p>Ejemplo: margen en una lista. La caja número 2 tiene un margen de 2em.</p>
+        <ul class="ejemplo-margen">
+          <li>1</li>
+          <li>2</li>
+          <li class="selected">3</li>
+        </ul>
+      </div>
+      <div class="item">
+        <p>
+          <strong>Propiedad: <span class="cursiva">padding</span></strong><br>
+          Padding es una propiedad que crea un margen entre los bordes dentro del elemento.
+        </p>
+        <p>Ejemplo: padding en una lista. La caja número 2 tiene un padding de 2em solo hacia los lados.</p>
+        <ul class="ejemplo-padding">
+          <li>1</li>
+          <li class="selected">2</li>
+          <li>3</li>
+        </ul>
       </div>
     </div>
   </section>
