@@ -1,0 +1,11 @@
+{
+  "name": "trees",
+  "version": "1.0.0",
+  "description": "Practicing with trees",
+  "main": "trees.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alfonso Valencia",
+  "license": "ISC"
+}
