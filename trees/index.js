@@ -30,19 +30,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     /* Tree tours */
     buttons[1].addEventListener('click', () => {
-      outputs[0].innerHTML += tree.root.preOrder();
+      outputs[0].innerHTML += tree.preOrder();
     });
     buttons[2].addEventListener('click', () => {
-      outputs[1].innerHTML += tree.root.inOrder();
+      outputs[1].innerHTML += tree.inOrder();
     });
     buttons[3].addEventListener('click', () => {
-      outputs[2].innerHTML += tree.root.postOrder();
+      outputs[2].innerHTML += tree.postOrder();
     });
 
     /* Search tool */
     buttons[4].addEventListener('click', () => {
-      outputs[3].innerHTML = `Search result: Your number ${tree.root.findNum(+inputs[1].value) != null ? 'was' : 'wasn\'t'} found!`;
-      console.log(tree.root.findNum(+inputs[1].value));
+      outputs[3].innerHTML = `Search result: Your number ${tree.findNum(+inputs[1].value) != null ? 'was' : 'wasn\'t'} found!`;
+      console.log(tree.findNum(+inputs[1].value));
     });
   }
 });

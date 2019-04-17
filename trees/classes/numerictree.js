@@ -1,10 +1,14 @@
-class NumericTree {
+// const Node = require('./node');
+
+class NumericTree extends Node {
   constructor (node) {
-    this.root = node;
+    super(node.data);
+    this.children = node.children;
+    this.parent = null;
   }
 
   addNode(node) {
-    let currentNode = this.root;
+    let currentNode = this;
     let wasSet = false;
     while (!wasSet) {
       if (node.data > currentNode.data) {
