@@ -1,9 +1,9 @@
 let running = false;
 const goal = 100;
 const myPlayers = [
-  { name: 'Alfonso', steps: 100, moving: 0 },
-  { name: 'Poncho', steps: 100, moving: 0 },
-  { name: 'Valencia', steps: 100, moving: 0 },
+  { name: 'Alfonso', steps: 0, moving: 0 },
+  { name: 'Poncho', steps: 0, moving: 0 },
+  { name: 'Valencia', steps: 0, moving: 0 },
   { name: 'Sandoval', steps: 0, moving: 0 },
   { name: 'Ponchis', steps: 0, moving: 0 },
 ];
