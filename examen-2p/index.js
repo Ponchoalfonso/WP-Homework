@@ -1,9 +1,9 @@
 let running = false;
 const goal = 100;
 const myPlayers = [
-  { name: 'Alfonso', steps: 0, moving: 0 },
-  { name: 'Poncho', steps: 0, moving: 0 },
-  { name: 'Valencia', steps: 0, moving: 0 },
+  { name: 'Alfonso', steps: 100, moving: 0 },
+  { name: 'Poncho', steps: 100, moving: 0 },
+  { name: 'Valencia', steps: 100, moving: 0 },
   { name: 'Sandoval', steps: 0, moving: 0 },
   { name: 'Ponchis', steps: 0, moving: 0 },
 ];
@@ -74,14 +74,18 @@ const drawWinners = winners => {
   const wBox = document.querySelector('#winner');
   let content = '';
 
-  for (const player of winners) {
-    content += ` ,${player.name}`
+  for (let i = 0; i < winners.length; i++) {
+    const player = winners[i];
+    if (i === winners.length - 1)
+      content += ` and ${player.name}`;
+    else
+      content += `, ${player.name}`;
   }
 
   if (winners.length > 1)
-    content += 'empataron!';
+    content += ' drew!';
   else
-    content += ' es el ganador';
+    content += ' is the winner!';
 
   content = content.substr(2);
 
